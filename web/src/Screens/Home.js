@@ -7,12 +7,12 @@ const Home = () => {
     <div name="Home" className={styles.home}>
       <div className={styles.titleContainer}>
         <p>
-        Manage your access control <br />
+        Manage your access control, <br />
           <b>keep your safety</b>
         </p>
         <p>
           With the best <br />
-          <b>online presence</b>
+          <b>system control</b>
         </p>
       </div>
       <div className={styles.ctaContainer}>
