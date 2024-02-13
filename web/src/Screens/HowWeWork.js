@@ -5,23 +5,23 @@ import Step from "../Components/Step";
 const HowWeWork = () => {
   const steps = [
     {
-      text: " You tell us your proposal.",
+      text: " Integration with IoT.",
       id: 1,
     },
     {
-      text: " We design your site and do a review.",
+      text: " Deployment and Implementation.",
       id: 2,
     },
     {
-      text: " We develop your website.",
+      text: " Data Management and Security.",
       id: 3,
     },
     {
-      text: " We deploy your website.",
+      text: " Support and maintenance.",
       id: 4,
     },
     {
-      text: " You enjoy all the benefits of having a website for your company.",
+      text: " Don't miss out on the benefits and hire our services.",
       id: 5,
     },
   ];

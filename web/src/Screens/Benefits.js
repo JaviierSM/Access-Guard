@@ -1,41 +1,32 @@
 import React from "react";
 import styles from "./Benefits.module.css";
-import { BsFillDoorOpenFill } from "react-icons/bs";
-import { FaPeopleCarry } from "react-icons/fa";
-import { FaMoneyBillAlt } from "react-icons/fa";
-import { AiOutlineSchedule } from "react-icons/ai";
-import { AiOutlineRise } from "react-icons/ai";
-import { FiRepeat } from "react-icons/fi";
+import { HiOutlineIdentification } from "react-icons/hi2";
+import { MdOutlineSecurity } from "react-icons/md";
+import { GiTentaclesSkull } from "react-icons/gi";
+import { MdOutlineDashboardCustomize } from "react-icons/md";
 
 const Benefits = () => {
   return (
     <div name="Benefits" className={styles.benefits}>
       <h2 className={styles.benefitTitle}>
-        Benefits of having a professional web
+        Benefits of having a biometric data security system
       </h2>
       <p>
-        You open up to the world <BsFillDoorOpenFill />
+        Accurate identification <HiOutlineIdentification />
       </p>
       <p>
-        New customers
-        <FaPeopleCarry />
+        Greater security
+        <MdOutlineSecurity />
       </p>
       <p>
         {" "}
-        Much lower costs <FaMoneyBillAlt />
+        Fraud reduction <GiTentaclesSkull />
       </p>
       <p>
-        No schedules
-        <AiOutlineSchedule />
+        Customization and scalability
+        <MdOutlineDashboardCustomize />
       </p>
-      <p>
-        Ultrasegmented marketing + high conversion
-        <AiOutlineRise />
-      </p>
-      <p>
-        Automation, less work, more performance
-        <FiRepeat />
-      </p>
+      
     </div>
   );
 };
