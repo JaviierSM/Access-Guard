@@ -44,6 +44,7 @@ const NavBar = () => {
       id: 4,
       link: "Benefits",
     },
+    
   ];
 
   const scrollPosition = useScrollPosition();
@@ -111,12 +112,21 @@ const NavBar = () => {
           ))}
           <Link
             onClick={() => setNavBarOpen(false)}
-            to="Contact"
+            to=""
             smooth
             duration={500}
             className={styles.contactLink}
           >
-            Contact
+            Register
+          </Link>
+          <Link
+            onClick={() => setNavBarOpen(false)}
+            to=""
+            smooth
+            duration={500}
+            className={styles.contactLink}
+          >
+            Log in
           </Link>
         </ul>
       )}
