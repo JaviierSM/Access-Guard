@@ -8,6 +8,13 @@ document.getElementById("formulario-sesion").addEventListener("submit", (event) 
 
   const account = new ManageAccount();
   account.authenticate(email, password);
+
+  if (!email.includes("@admin.com")) {
+    alert("Usted no puede entrar aquí")
+  }else{
+    window.location.href = 'crud.html';
+  }
+
   
 });
 
