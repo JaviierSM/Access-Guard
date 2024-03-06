@@ -12,7 +12,7 @@ document.getElementById("formulario-sesion").addEventListener("submit", (event) 
   if (!email.includes("@admin.com")) {
     alert("Usted no puede entrar aquí")
   }else{
-    window.location.href = 'crud.html';
+    window.location.href = 'http://localhost:3000/'; // cuando se aloje el proyecto en un host, se cambiará esta ruta
   }
 
   

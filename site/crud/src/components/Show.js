@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { collection, getDocs, doc, deleteDoc } from "firebase/firestore";
 import { db } from "../FirebaseConfig/Firebase";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { getAuth, signOut } from 'firebase/auth';
 
 const MySwal = withReactContent(Swal);
 
@@ -43,6 +44,19 @@ export const Show = () => {
   useEffect(() => {
     getEmployees();
   }, []);
+
+  const navigate = useNavigate();
+  const auth = getAuth();
+  const handleSignOut = () => {
+  signOut(auth)
+    .then(() => {
+      // Redireccionar a la página de inicio
+      navigate('/site'); // Reemplaza "/" con la ruta adecuada si es diferente
+    })
+    .catch((error) => {
+      console.error(error.message);
+    });
+};
 
   return (
     <>
@@ -94,6 +108,7 @@ export const Show = () => {
             </table>
           </div>
         </div>
+        <button onClick={handleSignOut}>Cerrar sesión</button>
       </div>
     </>
   );

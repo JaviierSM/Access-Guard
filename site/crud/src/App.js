@@ -15,6 +15,7 @@ function App() {
           <Route path="/create" element={<Create />} />
           <Route path="/edit/:id" element={<Edit />} />
           <Route path="/read/:id" element={<Read />} />
+          <Route path="/site/index.html" element={<Read />} />
         </Routes>
       </Router>
     </div>
