@@ -57,6 +57,9 @@ for (var i = 0; i < 6; i++) {
 fechasUltimos6Dias.reverse();
 ingresosUltimos6Dias.reverse();
 
+const maxValue = Math.max(...ingresosUltimos6Dias);
+const minValue = Math.min(...ingresosUltimos6Dias);
+
 // Bar Chart Example
 var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
@@ -103,10 +106,9 @@ var myBarChart = new Chart(ctx, {
         {
           ticks: {
             min: 0,
-            max: Math.max(...ingresosUltimos6Dias),
-            maxTicksLimit: 5,
+            max: maxValue,
+            maxTicksLimit: Math.min(maxValue + 1, 5), // Establecer maxTicksLimit al valor máximo + 1, pero no mayor a 5
             padding: 10,
-            // Include a dollar sign in the ticks
             callback: function (value, index, values) {
               return "" + number_format(value);
             },
