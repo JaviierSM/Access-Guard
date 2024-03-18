@@ -18,15 +18,21 @@ Este dashboard proporciona métricas detalladas sobre los accesos de los usuario
 
 1. Clona este repositorio en tu servidor web:
 
+```bash
 git clone https://github.com/JaviierSM/Access-Guard
+```
 
 2. Navega hasta la carpeta `dashboard`:
 
+```bash
 cd dashboard
+```
 
 3. Instala las dependencias de PHP utilizando Composer:
 
+```bash
 composer require kreait/firebase-php
+```
 
 4. Configura tu base de datos y Firebase credentials según lo especificado en `config.php`.
 
