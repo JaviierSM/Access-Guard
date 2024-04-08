@@ -1,1 +1,10 @@
 { "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+
+{
+    "functions": {
+        "api/**/*.php": { "source": "/(.*)", "destination": "/" },
+    },
+    "routes": [
+        { "source": "/(.*)", "destination": "/" }
+    ],
+}
